@@ -217,7 +217,7 @@ grid on;
 sgtitle('Aggregate deposits and lending', 'FontSize', 14, 'FontWeight', 'bold');
 
 
-%% ---- Panel 6: deposit and lending spreads over time ----
+%% ---- Panel 5: deposit and lending spreads over time ----
 
 sD_low   = r_low  - rD_low;
 sL_low   = rL_low - r_low;
