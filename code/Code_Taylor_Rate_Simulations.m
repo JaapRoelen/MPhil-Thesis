@@ -396,7 +396,7 @@ setYearTicks(dates_q_plot);
 xtickformat('yyyy');
 
 
-%% Shared y-limits so Simple vs Augmented (Figures 13 & 14) are visually comparable
+%% Shared y-limits so Simple vs Augmented (Figures 5 & 6) are visually comparable
 simple_vals_mat = NaN(length(dates_q_plot), length(countries));
 aug_vals_mat    = NaN(length(dates_q_plot), length(countries));
 for i = 1:length(countries)
@@ -410,7 +410,7 @@ y_pad = 0.05 * (y_hi - y_lo);
 taylor_common_ylim = [y_lo - y_pad, y_hi + y_pad];
 
 %% ================================
-%% FIGURE 13: SIMPLE TAYLOR — PLOT COUNTRIES
+%% FIGURE 5: SIMPLE TAYLOR — PLOT COUNTRIES
 %% ================================
 figure('Name', 'Simple Taylor Rates');
 hold on;
@@ -430,7 +430,7 @@ setYearTicks(dates_q_plot);
 xtickformat('yyyy');
 
 %% ================================
-%% FIGURE 14: AUGMENTED TAYLOR — PLOT COUNTRIES
+%% FIGURE 6: AUGMENTED TAYLOR — PLOT COUNTRIES
 %% ================================
 figure('Name', 'Taylor Rates of Imperfect Banking Competition');
 hold on;
@@ -450,7 +450,7 @@ setYearTicks(dates_q_plot);
 xtickformat('yyyy');
 
 %% ================================
-%% FIGURE 15: OVERVIEW GRID — PLOT COUNTRIES
+%% FIGURE 7: OVERVIEW GRID — PLOT COUNTRIES
 %% ================================
 figure('Name', 'Taylor Rates Overview — Plot Countries');
 tiledlayout(ceil(length(countries)/2), 2, 'TileSpacing', 'compact', 'Padding', 'compact');
@@ -476,7 +476,7 @@ lgd = legend({'Simple TR', 'Augmented TR'}, ...
 lgd.Layout.Tile = 'south';
 
 %% ================================
-%% FIGURE 16: OUTPUT GAPS — PLOT COUNTRIES
+%% FIGURE 8: OUTPUT GAPS — PLOT COUNTRIES
 %% ================================
 figure('Name', 'Output gaps across the EU');
 hold on;
@@ -495,7 +495,7 @@ setYearTicks(dates_q_plot);
 xtickformat('yyyy');
 
 %% ================================
-%% FIGURE 17: INFLATION — PLOT COUNTRIES
+%% FIGURE 8: INFLATION — PLOT COUNTRIES
 %% ================================
 figure('Name', 'Inflation across the EU');
 hold on;
@@ -515,7 +515,7 @@ setYearTicks(dates_q_plot);
 xtickformat('yyyy');
 
 %% ================================
-%% FIGURE 18: CROSS-SECTIONAL DISPERSION — ALL COUNTRIES
+%% FIGURE 9: CROSS-SECTIONAL DISPERSION — ALL COUNTRIES
 %% ================================
 n_q_plot = sum(time_idx_plot);
 ts_mat   = NaN(n_q_plot, length(all_countries));
