@@ -2,7 +2,7 @@
 rng(117);
 %% Generate x series
 T=40;
-shocks = sqrt(0.5)*randn(T, 1);
+shocks = randn(T, 1);
 rho = 0.7;
 x = zeros(T, 1);
 x(1) = shocks(1);
